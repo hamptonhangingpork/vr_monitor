@@ -10,7 +10,7 @@ subreddit   = 'vinylreleases'
 
 keep_alive() # you can comment this out if you're just running this on your local
 
-# add keywords to monitor here ex. use quotes & seperate keywords by , ['kanye west', 'boldy james']
+# add keywords to monitor here ex. use lowercase, quotes, & seperate keywords by , ['kanye west', 'boldy james']
 kw_list = []
 
 while True:
