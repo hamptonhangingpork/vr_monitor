@@ -8,7 +8,7 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 webhook_url = # copy personal discord webhook here
 subreddit   = 'vinylreleases'
 
-keep_alive()
+keep_alive() # you can comment this out if you're just running this on your local
 
 # add keywords to monitor here ex. use quotes & seperate keywords by , ['kanye west', 'boldy james']
 kw_list = []
@@ -58,6 +58,7 @@ while True:
             webhook.execute()
             time.sleep(1) # to prevent Discord webhook rate limiting
             break
+            
         # add post name to DB so we don't display it again
         db.append(post['data']['name'])
   
