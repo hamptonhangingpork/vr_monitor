@@ -23,7 +23,7 @@ Before running the script, please make sure the following variables are properly
   * Create a webhook for your desired channel - Edit Channel -> Integration -> Webhooks -> New Webhook
 
 - kw_list
-  * Add keywords to monitor here. Use quotes and seperate keywords by ',' - ex. ['kanye west', 'boldy james']
+  * Add keywords to monitor here. Place keywords inside quotes and seperate keywords by ',' - ex. ['kanye west', 'boldy james'] - use lowercase when adding keywords
 
 - myid
   * Get your Discord user id - Turn on Discord dev mode (https://www.howtogeek.com/714348/how-to-enable-or-disable-developer-mode-on-discord/) -> Right-click on your profile in the member pane -> Copy ID
