@@ -63,7 +63,7 @@ while True:
         if post['data']['name'] not in db:
           db.append(post['data']['name'])
   
-  # save the cache of (at least) the last 50 posts seen
+  # save the cache of latest db
   with open('db.json', 'w') as outfile:
       json.dump(db, outfile)
 
