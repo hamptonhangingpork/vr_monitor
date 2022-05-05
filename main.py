@@ -60,10 +60,11 @@ while True:
             break
             
         # add post name to DB so we don't display it again
-        db.append(post['data']['name'])
+        if post['data']['name'] not in db:
+          db.append(post['data']['name'])
   
   # save the cache of (at least) the last 50 posts seen
   with open('db.json', 'w') as outfile:
-      json.dump(db[-50:], outfile)
+      json.dump(db, outfile)
 
   time.sleep(60)
